@@ -2,6 +2,8 @@ PowerBoard Redux
 
 These are the Eage CAD Schematics and Board files, plus the Gerbers of some boards as-built, of an AdaFruit PowerBoost 1000C (https://www.adafruit.com/product/2465) adapted to the Raspberry Pi Zero form factor. It provides power to the +5VDC pins of the RPi header (protected via Schottkey diode). As AdaFruit describes the product this is based on, "With a built-in load-sharing battery charger circuit, you'll be able to keep your power-hungry project running even while recharging the battery!"
 
+See also the PowerHolder board (https://github.com/jdimpson/PowerHolder) which is just like this one, but has battery clips to hold a Li Ion 18650 cell on the board, rather than fussing with JST connectors. It also provides a way to use a stock PowerBoost 10000C board so you don't have as much soldering to do.
+
 The board patches the Low Battery (LBO) signal to the Pi via a level shifter, and also adds a programmable tactile button and LED.  You can use either one of those ubiquitous square tactile / momentary buttons, or one that mounts vertically (https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/1825027-5/450-1662-ND/529484). The footprints for the two buttons overlap, which looks ugly and means you really can choose only one. It also provides a spot for a vertical slide switch that enables or disables the power circuit (https://www.digikey.com/product-detail/en/c-k/OS102011MA1QN1/CKN9559-ND/1981430). It's possible to find horizontal slide switch that fits in the same footprint. (I've only ordered them from ebay.)
 
 Python software that works with the LBO signal, button, and LED will be linked here when they are published.
