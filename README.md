@@ -1,4 +1,4 @@
-PowerBoard Redux.
+PowerBoard Redux
 
 These are the Eage CAD Schematics and Board files, plus the Gerbers of some boards as-built, of an AdaFruit PowerBoost 1000C (https://www.adafruit.com/product/2465) adapted to the Raspberry Pi Zero form factor. It provides power to the +5VDC pins of the RPi header (protected via Zener diode). 
 
@@ -14,4 +14,10 @@ Changelog
 
 TODO:
 - do over that preserve original PowerBoost footprint so that you can either reflow the board or just pop one of AdaFruit's board onto it. 
+
+Raspberry Pi Pins used:
+
+    GPIO17/Phy11 is connected to a momentary / tactile switch. Available for arbitrary software control (typically running my powerboard.py and associated code).
+    GPIO27/Phy13 is connected to a resistor and then an LED. Available for arbitrary software control (e.g. flashing to show grace period, and typically running my powerboard.py and associated code).
+    GPIO26/Phy37 is connected to via transistor and appropriate hold up resistor to the LBO signal of the PowerBoost circuit. This is how the Raspberry Pi knows to shut down. The signal is held at battery level (but level shifted to 3.3 V before hitting the RPi) until the Li Ion battery level drops below 3.4VDC (or maybe it's 3.2V, I forget) at which point the LBO signal drops to ground. This tells the software on the RPi to do a graceful shutdown.
 
