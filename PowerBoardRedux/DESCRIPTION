@@ -1,0 +1,13 @@
+PowerBoard Redux.<br/>
+An AdaFruit PowerBoard 1000C adapted to the Raspberry Pi Zero form factor. Adds a programmable tactile button and LED. Patches the Low Battery (LBO) signal to the Pi via a level shifter.<br/>
+Changelog<br/>
+<ul>
+<li>Before v1.0 / Redux, I didn't know what I was doing, and kept laying out boards with traces that were way too small for the currents involved.
+<li>v1.01: Thickened VBAT, VLIPO, and USB traces from circuit to aux header; added zener diode to 5V trace into RPi; using VBAT rather than VLIPO in ENABLE pin switch.
+</ul>
+
+TODO:<br/>
+<ul>
+<li>do over that preserve original PowerBoost footprint so that you can either reflow the board or just pop one of AdaFruit's board onto it.
+</ul>
+
