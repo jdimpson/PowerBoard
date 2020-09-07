@@ -8,6 +8,8 @@ Python software that works with the LBO signal, button, and LED will be linked h
 
 The MicroUSB connector is not the same foot print as AdaFruit uses in their PowerBoost, because I couldn't figure out which one it was. The part I use is an amphenol 10118194-0001LF (https://www.digikey.com/product-detail/en/amphenol-icc-fci/10118194-0001LF/609-4618-1-ND/2785382). It still has 4 through-hole-ish studs for strength (but can be hot-air reflowed) like AdaFruit's part, but the location of the studs are incompatible.
 
+Battery is connected to a JST-style connector in a manner compatible with how AdaFruit does it, or you can omit the connector and use the 2.54 mm pitch througholes to solder wires or a different connector to. Note that another Repo contains the PowerCarrier board, which is functionally identical to this board, but includes battery holders for a Li-Ion 18650 cell on the board.
+
 Changelog
 - Before v1.0 / Redux, I didn't know what I was doing, and kept laying out boards with traces that were way too small for the currents involved. 
 - v1.01: Thickened VBAT, VLIPO, and USB traces from circuit to aux header; added zener diode to 5V trace into RPi; using VBAT rather than VLIPO in ENABLE pin switch. 
