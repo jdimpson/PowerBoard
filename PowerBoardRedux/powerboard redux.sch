@@ -12927,9 +12927,9 @@ Right angle</text>
 <part name="U$7" library="microbuilder" deviceset="5.0V" device=""/>
 <part name="FID2" library="microbuilder" deviceset="FIDUCIAL" device="&quot;&quot;"/>
 <part name="U$19" library="microbuilder" deviceset="VBAT" device=""/>
-<part name="LED1" library="microbuilder" deviceset="LED" device="0805_NOOUTLINE" value="RED"/>
+<part name="LOW" library="microbuilder" deviceset="LED" device="0805_NOOUTLINE" value="RED"/>
 <part name="R20" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="1K"/>
-<part name="LED2" library="microbuilder" deviceset="LED" device="0805_NOOUTLINE" value="BLUE"/>
+<part name="PWR" library="microbuilder" deviceset="LED" device="0805_NOOUTLINE" value="BLUE"/>
 <part name="R5" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="1K"/>
 <part name="R13" library="microbuilder" deviceset="RESISTOR" device="0805_NOOUTLINE" value="200K"/>
 <part name="U$27" library="microbuilder" deviceset="VBAT" device=""/>
@@ -13005,7 +13005,7 @@ Right angle</text>
 <part name="SW1" library="right angle tactile switch 1825027-5 te connect" deviceset="1825027-5" device=""/>
 <part name="S4" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM" package3d_urn="urn:adsk.eagle:package:40163/1"/>
 <part name="CN1" library="microusb-amphenol-10118194-0001LF" deviceset="USB" device="MICRO_20329" value="microUSB"/>
-<part name="U$11" library="rightangleslideswitchspdt" deviceset="OS102011MA1QN1" device=""/>
+<part name="SW2" library="rightangleslideswitchspdt" deviceset="OS102011MA1QN1" device=""/>
 <part name="JP1" library="microbuilder" deviceset="HEADER-1X2" device="ROUND" value="JP1"/>
 </parts>
 <sheets>
@@ -13044,9 +13044,9 @@ R3 = 1.1Mohm for 3.3V</text>
 <instance part="U$7" gate="G$1" x="101.6" y="91.44"/>
 <instance part="FID2" gate="G$1" x="236.22" y="22.86"/>
 <instance part="U$19" gate="G$1" x="15.24" y="73.66"/>
-<instance part="LED1" gate="G$1" x="101.6" y="25.4" rot="R270"/>
+<instance part="LOW" gate="G$1" x="101.6" y="25.4" rot="R270"/>
 <instance part="R20" gate="G$1" x="101.6" y="35.56" rot="R90"/>
-<instance part="LED2" gate="G$1" x="121.92" y="83.82"/>
+<instance part="PWR" gate="G$1" x="121.92" y="83.82"/>
 <instance part="R5" gate="G$1" x="109.22" y="83.82"/>
 <instance part="R13" gate="G$1" x="43.18" y="91.44" rot="R270"/>
 <instance part="U$27" gate="G$1" x="43.18" y="101.6"/>
@@ -13121,7 +13121,7 @@ R3 = 1.1Mohm for 3.3V</text>
 <instance part="SW1" gate="A" x="220.98" y="68.58"/>
 <instance part="S4" gate="G$1" x="220.98" y="58.42"/>
 <instance part="CN1" gate="G$1" x="83.82" y="147.32"/>
-<instance part="U$11" gate="G$1" x="185.42" y="58.42"/>
+<instance part="SW2" gate="G$1" x="185.42" y="58.42"/>
 <instance part="JP1" gate="G$1" x="269.24" y="116.84"/>
 </instances>
 <busses>
@@ -13181,7 +13181,7 @@ R3 = 1.1Mohm for 3.3V</text>
 <segment>
 <wire x1="127" y1="83.82" x2="127" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U$14" gate="G$1" pin="GND"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="PWR" gate="G$1" pin="C"/>
 <wire x1="124.46" y1="83.82" x2="127" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -13190,7 +13190,7 @@ R3 = 1.1Mohm for 3.3V</text>
 <wire x1="30.48" y1="27.94" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="LOW" gate="G$1" pin="C"/>
 <pinref part="U$20" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -13299,7 +13299,7 @@ R3 = 1.1Mohm for 3.3V</text>
 <wire x1="231.14" y1="58.42" x2="226.06" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="P$1"/>
+<pinref part="SW2" gate="G$1" pin="P$1"/>
 <pinref part="U$16" gate="G$1" pin="GND"/>
 <wire x1="147.32" y1="58.42" x2="147.32" y2="60.96" width="0.1524" layer="91"/>
 </segment>
@@ -13404,7 +13404,7 @@ R3 = 1.1Mohm for 3.3V</text>
 <wire x1="91.44" y1="99.06" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$11" gate="G$1" pin="P$3"/>
+<pinref part="SW2" gate="G$1" pin="P$3"/>
 <wire x1="157.48" y1="60.96" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="50.8" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
 <label x="160.02" y="50.8" size="1.778" layer="95"/>
@@ -13412,7 +13412,7 @@ R3 = 1.1Mohm for 3.3V</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="LOW" gate="G$1" pin="A"/>
 <pinref part="R20" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -13434,7 +13434,7 @@ R3 = 1.1Mohm for 3.3V</text>
 <segment>
 <wire x1="152.4" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="91"/>
 <label x="139.7" y="50.8" size="1.778" layer="95"/>
-<pinref part="U$11" gate="G$1" pin="P$2"/>
+<pinref part="SW2" gate="G$1" pin="P$2"/>
 <wire x1="152.4" y1="60.96" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13480,7 +13480,7 @@ R3 = 1.1Mohm for 3.3V</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="PWR" gate="G$1" pin="A"/>
 <wire x1="114.3" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
