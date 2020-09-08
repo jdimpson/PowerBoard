@@ -1,4 +1,4 @@
-PowerBoard Redux
+# PowerBoard Redux
 
 These are the Eage CAD Schematics and Board files, plus the Gerbers of some boards as-built, of an AdaFruit PowerBoost 1000C (https://www.adafruit.com/product/2465) adapted to the Raspberry Pi Zero form factor. It provides power to the +5VDC pins of the RPi header (protected via Schottkey diode). As AdaFruit describes the product this is based on, "With a built-in load-sharing battery charger circuit, you'll be able to keep your power-hungry project running even while recharging the battery!"
 
