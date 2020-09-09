@@ -6,7 +6,7 @@ See also the PowerHolder board (https://github.com/jdimpson/PowerHolder) which i
 
 The board patches the Low Battery (LBO) signal to the Pi via a level shifter, and also adds a programmable tactile button and LED.  You can use either one of those ubiquitous square tactile / momentary buttons, or one that mounts vertically (https://www.digikey.com/product-detail/en/te-connectivity-alcoswitch-switches/1825027-5/450-1662-ND/529484). The footprints for the two buttons overlap, which looks ugly and means you really can choose only one. It also provides a spot for a vertical slide switch that enables or disables the power circuit (https://www.digikey.com/product-detail/en/c-k/OS102011MA1QN1/CKN9559-ND/1981430). It's possible to find horizontal slide switch that fits in the same footprint. (I've only ordered them from ebay.)
 
-Python software that works with the LBO signal, button, and LED will be linked here when they are published.
+Python software that works with the LBO signal, button, and LED are available in the [RPiIoT](https://github.com/jdimpson/RPiIoT) repo.
 
 The MicroUSB connector is not the same foot print as AdaFruit uses in their PowerBoost, because I couldn't figure out which one it was. The part I use is an amphenol 10118194-0001LF (https://www.digikey.com/product-detail/en/amphenol-icc-fci/10118194-0001LF/609-4618-1-ND/2785382). It still has 4 through-hole-ish studs for strength (but can be hot-air reflowed) like AdaFruit's part, but the location of the studs are incompatible.
 
